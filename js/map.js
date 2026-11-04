@@ -37,7 +37,7 @@
   };
 
   function fetchJson(url) {
-    return fetch(url, { credentials: 'omit' }).then(function (r) {
+    return fetch(url, { credentials: 'same-origin' }).then(function (r) {
       if (!r.ok) throw new Error('Could not load ' + url);
       return r.json();
     });
