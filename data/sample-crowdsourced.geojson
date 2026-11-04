@@ -1,0 +1,150 @@
+{
+  "type": "FeatureCollection",
+  "_note": "FAKE SAMPLE DATA for testing the prototype. Not real reports. Points are placed at city level only, never exact locations.",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.82,
+          -1.29
+        ]
+      },
+      "properties": {
+        "sample": true,
+        "id": "SAMPLE-C1",
+        "category": "wages",
+        "sector": "content_moderation",
+        "place": "Nairobi",
+        "country": "Kenya",
+        "reports": 14,
+        "hourly_pay_usd": 1.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.98,
+          14.6
+        ]
+      },
+      "properties": {
+        "sample": true,
+        "id": "SAMPLE-C2",
+        "category": "wages",
+        "sector": "data_work",
+        "place": "Manila",
+        "country": "Philippines",
+        "reports": 9,
+        "hourly_pay_usd": 2.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.63,
+          -23.55
+        ]
+      },
+      "properties": {
+        "sample": true,
+        "id": "SAMPLE-C3",
+        "category": "deactivations",
+        "sector": "delivery",
+        "place": "São Paulo",
+        "country": "Brazil",
+        "reports": 21,
+        "deactivations": 37
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.21,
+          28.61
+        ]
+      },
+      "properties": {
+        "sample": true,
+        "id": "SAMPLE-C4",
+        "category": "deactivations",
+        "sector": "ride_hailing",
+        "place": "Delhi",
+        "country": "India",
+        "reports": 17,
+        "deactivations": 25
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.38,
+          6.52
+        ]
+      },
+      "properties": {
+        "sample": true,
+        "id": "SAMPLE-C5",
+        "category": "company_relationships",
+        "sector": "data_work",
+        "place": "Lagos",
+        "country": "Nigeria",
+        "reports": 5,
+        "company": "Sample Company A",
+        "relationship": "outsources_to",
+        "related_company": "Sample Company B"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.13,
+          19.43
+        ]
+      },
+      "properties": {
+        "sample": true,
+        "id": "SAMPLE-C6",
+        "category": "wages",
+        "sector": "care_work",
+        "place": "Mexico City",
+        "country": "Mexico",
+        "reports": 11,
+        "hourly_pay_usd": 3.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7,
+          40.42
+        ]
+      },
+      "properties": {
+        "sample": true,
+        "id": "SAMPLE-C7",
+        "category": "company_relationships",
+        "sector": "delivery",
+        "place": "Madrid",
+        "country": "Spain",
+        "reports": 4,
+        "company": "Sample Company C",
+        "relationship": "outsources_to",
+        "related_company": "Sample Company D"
+      }
+    }
+  ]
+}

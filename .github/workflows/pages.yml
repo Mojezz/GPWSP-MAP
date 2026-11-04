@@ -1,0 +1,45 @@
+# Publishes the website to GitHub Pages whenever changes reach the main branch.
+# Only the website files are published (not documents or other repository files).
+name: Publish website
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Collect website files
+        run: |
+          mkdir _site
+          cp -r index.html css js locales data vendor _site/
+          touch _site/.nojekyll
+
+      - name: Check data files are valid JSON
+        run: |
+          for f in _site/locales/*.json _site/data/*.json _site/data/*.geojson; do
+            python3 -c "import json,sys; json.load(open(sys.argv[1]))" "$f" || exit 1
+          done
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
