@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Security: only load files from this website itself. No outside scripts, fonts, trackers or map servers. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
+  <!-- Security: never tell other websites which page a visitor came from. -->
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex">
+  <title data-i18n="site.page_title">GPWSP Map</title>
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!--
+    All visible words come from locales/<language>.json.
+    The English text written here is only a fallback shown for a split second while loading.
+  -->
+  <header class="topbar">
+    <div class="brand">
+      <h1 data-i18n="site.title">GPWSP Map</h1>
+      <p class="subtitle" data-i18n="site.subtitle"></p>
+    </div>
+    <div class="topbar-actions">
+      <label class="visually-hidden" for="language-select" data-i18n="buttons.language">Language</label>
+      <select id="language-select" class="language-select"></select>
+      <button type="button" id="about-button" class="button" data-i18n="buttons.about">About</button>
+    </div>
+  </header>
+
+  <div class="banner" role="note" data-i18n="banner.prototype">Prototype: all data on this map is FAKE sample data.</div>
+
+  <main class="map-wrap">
+    <div id="map"></div>
+    <p id="load-error" class="load-error" role="alert" hidden data-i18n="errors.load_failed">Some map data could not be loaded. Please check your connection and reload the page.</p>
+
+    <button type="button" id="layers-button" class="button layers-button" aria-controls="layers-panel" aria-expanded="false" data-i18n="buttons.layers">Layers</button>
+
+    <section id="layers-panel" class="layers-panel" aria-labelledby="layers-heading">
+      <div class="panel-header">
+        <h2 id="layers-heading" data-i18n="layers.heading">Map layers</h2>
+        <button type="button" id="layers-close" class="button button-quiet panel-close" data-i18n="buttons.close">Close</button>
+      </div>
+
+      <div class="layer-row">
+        <input type="checkbox" role="switch" id="toggle-crowdsourced" class="switch" checked>
+        <label for="toggle-crowdsourced">
+          <span class="layer-name" data-i18n="layers.crowdsourced"></span>
+          <span class="layer-hint" data-i18n="layers.crowdsourced_hint"></span>
+        </label>
+      </div>
+      <ul class="legend" id="legend-crowdsourced"></ul>
+
+      <div class="layer-row">
+        <input type="checkbox" role="switch" id="toggle-overlays" class="switch" checked>
+        <label for="toggle-overlays">
+          <span class="layer-name" data-i18n="layers.overlays"></span>
+          <span class="layer-hint" data-i18n="layers.overlays_hint"></span>
+        </label>
+      </div>
+      <ul class="legend" id="legend-overlays"></ul>
+
+      <div class="layer-row">
+        <input type="checkbox" role="switch" id="toggle-legislation" class="switch" checked>
+        <label for="toggle-legislation">
+          <span class="layer-name" data-i18n="layers.legislation"></span>
+          <span class="layer-hint" data-i18n="layers.legislation_hint"></span>
+        </label>
+      </div>
+      <ul class="legend" id="legend-legislation"></ul>
+    </section>
+  </main>
+
+  <dialog id="about-dialog" class="about-dialog" aria-labelledby="about-heading">
+    <h2 id="about-heading" data-i18n="about.heading"></h2>
+    <p data-i18n="about.body_1"></p>
+    <p data-i18n="about.body_2"></p>
+    <h3 data-i18n="about.privacy_heading"></h3>
+    <p data-i18n="about.privacy_body"></p>
+    <p class="small" data-i18n="about.map_data"></p>
+    <button type="button" id="about-close" class="button" data-i18n="buttons.close">Close</button>
+  </dialog>
+
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/map.js"></script>
+</body>
+</html>

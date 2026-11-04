@@ -1,0 +1,63 @@
+{
+  "type": "FeatureCollection",
+  "_note": "FAKE SAMPLE DATA for testing the prototype. Not real reports. Points are placed at city level only, never exact locations.",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.9,
+          22.0
+        ]
+      },
+      "properties": {
+        "sample": true,
+        "id": "SAMPLE-O1",
+        "overlay": "platform_workforce_estimate",
+        "country": "India",
+        "value": 7700000,
+        "radius_km": 700,
+        "source": "Sample source (fake)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.9,
+          -1.5
+        ]
+      },
+      "properties": {
+        "sample": true,
+        "id": "SAMPLE-O2",
+        "overlay": "platform_workforce_estimate",
+        "country": "Indonesia",
+        "value": 2300000,
+        "radius_km": 500,
+        "source": "Sample source (fake)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.9,
+          0.2
+        ]
+      },
+      "properties": {
+        "sample": true,
+        "id": "SAMPLE-O3",
+        "overlay": "platform_workforce_estimate",
+        "country": "Kenya",
+        "value": 1200000,
+        "radius_km": 350,
+        "source": "Sample source (fake)"
+      }
+    }
+  ]
+}

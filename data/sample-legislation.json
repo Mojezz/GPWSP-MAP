@@ -1,0 +1,53 @@
+{
+  "_note": "FAKE SAMPLE DATA. Keys are ISO 3166-1 numeric country codes, matching data/world-countries.geojson. Law names are invented.",
+  "countries": {
+    "250": {
+      "country": "France",
+      "status": "protective_law",
+      "law": "Sample Platform Work Act (fake)",
+      "since": 2021
+    },
+    "724": {
+      "country": "Spain",
+      "status": "protective_law",
+      "law": "Sample Riders Law (fake)",
+      "since": 2021
+    },
+    "076": {
+      "country": "Brazil",
+      "status": "draft_law",
+      "law": "Sample App Workers Bill (fake)",
+      "since": 2024
+    },
+    "404": {
+      "country": "Kenya",
+      "status": "draft_law",
+      "law": "Sample Digital Labour Bill (fake)",
+      "since": 2025
+    },
+    "356": {
+      "country": "India",
+      "status": "draft_law",
+      "law": "Sample Gig Workers Code (fake)",
+      "since": 2023
+    },
+    "608": {
+      "country": "Philippines",
+      "status": "no_specific_law",
+      "law": "—",
+      "since": null
+    },
+    "566": {
+      "country": "Nigeria",
+      "status": "no_specific_law",
+      "law": "—",
+      "since": null
+    },
+    "818": {
+      "country": "Egypt",
+      "status": "restrictive",
+      "law": "Sample Associations Law (fake)",
+      "since": 2019
+    }
+  }
+}

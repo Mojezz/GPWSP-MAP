@@ -1,0 +1,89 @@
+{
+  "_meta": {
+    "language_name": "English",
+    "note_for_translators": "Translate only the text on the right of each colon. Keep words in {curly braces} exactly as they are: they are replaced by numbers or names when the page runs."
+  },
+  "site": {
+    "title": "GPWSP Map",
+    "subtitle": "A worker-led map of platform work",
+    "page_title": "GPWSP Map – prototype"
+  },
+  "banner": {
+    "prototype": "Prototype: all data on this map is FAKE sample data for testing only."
+  },
+  "buttons": {
+    "layers": "Layers",
+    "about": "About",
+    "close": "Close",
+    "language": "Language"
+  },
+  "layers": {
+    "heading": "Map layers",
+    "crowdsourced": "Crowdsourced data",
+    "crowdsourced_hint": "Reports shared by workers",
+    "overlays": "Public data overlays",
+    "overlays_hint": "Figures from public sources",
+    "legislation": "Legislation",
+    "legislation_hint": "Laws on platform work, by country"
+  },
+  "legend": {
+    "heading": "Key"
+  },
+  "categories": {
+    "wages": "Wages",
+    "deactivations": "Deactivations",
+    "company_relationships": "Company relationships"
+  },
+  "sectors": {
+    "ride_hailing": "Ride-hailing",
+    "delivery": "Delivery",
+    "content_moderation": "Content moderation",
+    "data_work": "Data work",
+    "care_work": "Care work"
+  },
+  "relationships": {
+    "outsources_to": "outsources work to"
+  },
+  "legislation_status": {
+    "protective_law": "Protective law in force",
+    "draft_law": "Draft law under discussion",
+    "no_specific_law": "No specific law",
+    "restrictive": "Restrictions on organizing"
+  },
+  "overlays": {
+    "platform_workforce_estimate": "Estimated platform workers"
+  },
+  "popup": {
+    "sample_badge": "FAKE SAMPLE DATA",
+    "place": "Place",
+    "sector": "Type of work",
+    "category": "Topic",
+    "reports": "Number of reports",
+    "hourly_pay": "Average hourly pay",
+    "hourly_pay_value": "{amount} USD per hour",
+    "deactivations": "Deactivations reported",
+    "relationship": "Relationship",
+    "relationship_value": "{company} {relationship} {related}",
+    "country": "Country",
+    "status": "Status",
+    "law": "Law",
+    "since": "Since",
+    "value": "Value",
+    "value_people": "{amount} people",
+    "source": "Source"
+  },
+  "about": {
+    "heading": "About this map",
+    "body_1": "This map is being built by and for platform workers: people working in ride-hailing, delivery, content moderation, data work, care work and more. It is a project of the Global Platform Workers Solidarity Project (GPWSP).",
+    "body_2": "This is an early prototype. Everything shown is invented sample data. No real worker information is collected or displayed.",
+    "privacy_heading": "Your privacy",
+    "privacy_body": "This site uses no cookies, no tracking and no advertising. Apart from the service that hosts this website, your device does not contact any other company when you view this map.",
+    "map_data": "Country borders: Natural Earth (public domain). Borders are shown for reference only and are not a statement about any disputed territory."
+  },
+  "map": {
+    "attribution": "Borders: Natural Earth"
+  },
+  "errors": {
+    "load_failed": "Some map data could not be loaded. Please check your connection and reload the page."
+  }
+}
